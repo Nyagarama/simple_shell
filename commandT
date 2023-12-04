@@ -1,0 +1,17 @@
+/**
+ * struct SimpleCommand -Describes a simple command data structure and arguments
+ * @_numberOfAvailableArguments: integer value representing the total number
+ * of available slots for command arguments
+ * @_numberOfArguments: integer value representing the current number
+ * of arguments stored in a command
+ * @_arguments: A pointer to a pointer char
+ */
+struct SimpleCommand
+{
+	int _numberOfAvailableArguments;
+	int _numberOfArguments;
+	char **_arguments;
+
+	SimpleCommand();
+	void insertArgument(char *argument);
+};
